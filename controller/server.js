@@ -5,6 +5,15 @@ const app = express();
 
 const connection = require('../db/data_access');
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }))
+const cors = require('cors');
+
+
+var corsOptions = {
+    origin: 'http://localhost:3001',
+    optionsSuccessStatus: 200 // For legacy browser support
+}
+app.use(cors(corsOptions));
 
 const BASE_PATH = '/fifa';
 
