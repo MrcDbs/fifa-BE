@@ -10,7 +10,7 @@ const cors = require('cors');
 
 
 var corsOptions = {
-    origin: 'https://mrcdbs.github.io/fifa-cup-repo',
+    origin: 'https://mrcdbs.github.io',
     optionsSuccessStatus: 200 // For legacy browser support
 }
 app.use(cors(corsOptions));
